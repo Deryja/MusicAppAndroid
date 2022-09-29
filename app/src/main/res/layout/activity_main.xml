@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:background="@drawable/hadalahbek"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:onClick="playMusic"
+        android:text="Play"
+        app:layout_constraintEnd_toEndOf="parent"
+
+       android:background="@color/teal_200"
+
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentEnd="true"
+
+        android:background="@color/teal_200"
+
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="7dp"
+        android:onClick="pauseMusic"
+        android:text="Pause"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="196dp"
+        tools:text="Pause" />
+
+    <Switch
+        android:id="@+id/switch_looping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="looping"
+        android:textColor="@color/white"
+android:textSize="20dp"
+        android:layout_below="@id/button2"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="377dp" />
+
+
+
+</RelativeLayout>
